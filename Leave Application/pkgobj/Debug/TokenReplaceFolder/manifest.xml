@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="f41fe217-a4c5-4cfd-affb-bcb14b7cafd2" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="Leave Application.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="Leave Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=56165cd852456de2" Namespace="Leave_Application.AddNewEmployee" TypeName="*" />
+        <SafeControl Assembly="Leave Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=56165cd852456de2" Namespace="Leave_Application.LeaveRequestForm" TypeName="*" />
+        <SafeControl Assembly="Leave Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=56165cd852456de2" Namespace="Leave_Application.EmployeeInformation" TypeName="*" />
+        <SafeControl Assembly="Leave Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=56165cd852456de2" Namespace="Leave_Application.EditEmployeeInformation" TypeName="*" />
+        <SafeControl Assembly="Leave Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=56165cd852456de2" Namespace="Leave_Application.CancelEmployeeLeaves" TypeName="*" />
+        <SafeControl Assembly="Leave Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=56165cd852456de2" Namespace="Leave_Application.EmployeeLeavesList" TypeName="*" />
+        <SafeControl Assembly="Leave Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=56165cd852456de2" Namespace="Leave_Application.UpdateEmployeeLeaves" TypeName="*" />
+        <SafeControl Assembly="Leave Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=56165cd852456de2" Namespace="Leave_Application.MyTeamMemberDetails" TypeName="*" />
+        <SafeControl Assembly="Leave Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=56165cd852456de2" Namespace="Leave_Application.EmployeeLeaveStatus" TypeName="*" />
+        <SafeControl Assembly="Leave Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=56165cd852456de2" Namespace="Leave_Application.AllEmployeeLeaveList" TypeName="*" />
+        <SafeControl Assembly="Leave Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=56165cd852456de2" Namespace="Leave_Application.LeaveInfo" TypeName="*" />
+        <SafeControl Assembly="Leave Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=56165cd852456de2" Namespace="Leave_Application.PendingStatus" TypeName="*" />
+        <SafeControl Assembly="Leave Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=56165cd852456de2" Namespace="Leave_Application.CompoffRequestForm" TypeName="*" />
+        <SafeControl Assembly="Leave Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=56165cd852456de2" Namespace="Leave_Application.CompoffRequests" TypeName="*" />
+        <SafeControl Assembly="Leave Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=56165cd852456de2" Namespace="Leave_Application.CompoffStatus" TypeName="*" />
+        <SafeControl Assembly="Leave Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=56165cd852456de2" Namespace="Leave_Application.ResignationForm" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="CONTROLTEMPLATES\Leave_Application\AddNewEmployee\AddNewEmployeeUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\Leave_Application\LeaveRequestForm\LeaveRequestFormUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\Leave_Application\EmployeeInformation\EmployeeInformationUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\Leave_Application\EditEmployeeInformation\EditEmployeeInformationUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\Leave_Application\CancelEmployeeLeaves\CancelEmployeeLeavesUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\Leave_Application\EmployeeLeavesList\EmployeeLeavesListUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\Leave_Application\UpdateEmployeeLeaves\UpdateEmployeeLeavesUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\Leave_Application\MyTeamMemberDetails\MyTeamMemberDetailsUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\Leave_Application\EmployeeLeaveStatus\EmployeeLeaveStatusUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\Leave_Application\AllEmployeeLeaveList\AllEmployeeLeaveListUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\Leave_Application\LeaveInfo\LeaveInfoUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\Leave_Application\PendingStatus\PendingStatusUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\Leave_Application\CompoffRequestForm\CompoffRequestFormUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\Leave_Application\CompoffRequests\CompoffRequestsUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\Leave_Application\CompoffStatus\CompoffStatusUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\Leave_Application\ResignationForm\ResignationFormUserControl.ascx" />
+    <TemplateFile Location="Layouts\LeaveApplication\Unauthorised.aspx" />
+    <TemplateFile Location="Layouts\LeaveApplication\CompoffRequestPage.aspx" />
+    <TemplateFile Location="Layouts\LeaveApplication\AdminCompoffApproval.aspx" />
+    <TemplateFile Location="Layouts\LeaveApplication\ResignationProcess.aspx" />
+    <TemplateFile Location="Layouts\LeaveApplication\AddNewEmployees.aspx" />
+    <TemplateFile Location="Layouts\LeaveApplication\AdminApproval.aspx" />
+    <TemplateFile Location="Layouts\LeaveApplication\AllEmployeeLeaves.aspx" />
+    <TemplateFile Location="Layouts\LeaveApplication\LeaveRequestPage.aspx" />
+    <TemplateFile Location="Layouts\LeaveApplication\MyTeamMembersReport.aspx" />
+    <TemplateFile Location="Layouts\LeaveApplication\UpdateLeaveDays.aspx" />
+    <TemplateFile Location="Layouts\LeaveApplication\CancelLeaves.aspx" />
+    <TemplateFile Location="Layouts\LeaveApplication\EditEmployee.aspx" />
+    <TemplateFile Location="Layouts\LeaveApplication\AddNewEmployee.js" />
+    <TemplateFile Location="Layouts\LeaveApplication\CancelLeaves.js" />
+    <TemplateFile Location="Layouts\LeaveApplication\EditEmpInformation.js" />
+    <TemplateFile Location="Layouts\LeaveApplication\jquery.min.js" />
+    <TemplateFile Location="Layouts\LeaveApplication\LeaveRequest.js" />
+    <TemplateFile Location="Layouts\LeaveApplication\LeaveStatus.js" />
+    <TemplateFile Location="Layouts\LeaveApplication\SPOpenDialog.js" />
+    <TemplateFile Location="Layouts\LeaveApplication\StyleSheet.css" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="Leave Application_Leave Application\Feature.xml" />
+  </FeatureManifests>
+</Solution>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="Leave_Application.AddNewEmploye.AddNewEmployee, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">AddNewEmployee</property>
+        <property name="Description" type="string">Web part to add a new employee</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

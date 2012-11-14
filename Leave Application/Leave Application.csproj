@@ -1,0 +1,473 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D16F706D-D24F-49B4-B7B0-134018F65BDD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Leave_Application</RootNamespace>
+    <AssemblyName>Leave Application</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Server, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Server.UserProfiles, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Web.CommandUI, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Security" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AllEmployeeLeaveList\AllEmployeeLeaveList.cs" />
+    <Compile Include="AllEmployeeLeaveList\AllEmployeeLeaveListUserControl.ascx.cs">
+      <DependentUpon>AllEmployeeLeaveListUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AllEmployeeLeaveList\AllEmployeeLeaveListUserControl.ascx.designer.cs">
+      <DependentUpon>AllEmployeeLeaveListUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CancelEmployeeLeaves\CancelEmployeeLeaves.cs" />
+    <Compile Include="CancelEmployeeLeaves\CancelEmployeeLeavesUserControl.ascx.cs">
+      <DependentUpon>CancelEmployeeLeavesUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CancelEmployeeLeaves\CancelEmployeeLeavesUserControl.ascx.designer.cs">
+      <DependentUpon>CancelEmployeeLeavesUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompoffRequestForm\CompoffRequestForm.cs" />
+    <Compile Include="CompoffRequestForm\CompoffRequestFormUserControl.ascx.cs">
+      <DependentUpon>CompoffRequestFormUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompoffRequestForm\CompoffRequestFormUserControl.ascx.designer.cs">
+      <DependentUpon>CompoffRequestFormUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompoffRequests\CompoffRequests.cs" />
+    <Compile Include="CompoffRequests\CompoffRequestsUserControl.ascx.cs">
+      <DependentUpon>CompoffRequestsUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompoffRequests\CompoffRequestsUserControl.ascx.designer.cs">
+      <DependentUpon>CompoffRequestsUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompoffStatus\CompoffStatus.cs" />
+    <Compile Include="CompoffStatus\CompoffStatusUserControl.ascx.cs">
+      <DependentUpon>CompoffStatusUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompoffStatus\CompoffStatusUserControl.ascx.designer.cs">
+      <DependentUpon>CompoffStatusUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditEmployeeInformation\EditEmployeeInformation.cs" />
+    <Compile Include="EditEmployeeInformation\EditEmployeeInformationUserControl.ascx.cs">
+      <DependentUpon>EditEmployeeInformationUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditEmployeeInformation\EditEmployeeInformationUserControl.ascx.designer.cs">
+      <DependentUpon>EditEmployeeInformationUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeInformation\EmployeeInformation.cs" />
+    <Compile Include="EmployeeInformation\EmployeeInformationUserControl.ascx.cs">
+      <DependentUpon>EmployeeInformationUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeInformation\EmployeeInformationUserControl.ascx.designer.cs">
+      <DependentUpon>EmployeeInformationUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewEmployee\AddNewEmployee.cs" />
+    <Compile Include="AddNewEmployee\AddNewEmployeeUserControl.ascx.cs">
+      <DependentUpon>AddNewEmployeeUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddNewEmployee\AddNewEmployeeUserControl.ascx.designer.cs">
+      <DependentUpon>AddNewEmployeeUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeLeavesList\EmployeeLeavesList.cs" />
+    <Compile Include="EmployeeLeavesList\EmployeeLeavesListUserControl.ascx.cs">
+      <DependentUpon>EmployeeLeavesListUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeLeavesList\EmployeeLeavesListUserControl.ascx.designer.cs">
+      <DependentUpon>EmployeeLeavesListUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeLeaveStatus\EmployeeLeaveStatus.cs" />
+    <Compile Include="EmployeeLeaveStatus\EmployeeLeaveStatusUserControl.ascx.cs">
+      <DependentUpon>EmployeeLeaveStatusUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeLeaveStatus\EmployeeLeaveStatusUserControl.ascx.designer.cs">
+      <DependentUpon>EmployeeLeaveStatusUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entity.cs" />
+    <Compile Include="Layouts\LeaveApplication\Unauthorised.aspx.cs">
+      <DependentUpon>Unauthorised.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\LeaveApplication\Unauthorised.aspx.designer.cs">
+      <DependentUpon>Unauthorised.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\LeaveApplication\CompoffRequestPage.aspx.cs">
+      <DependentUpon>CompoffRequestPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\LeaveApplication\CompoffRequestPage.aspx.designer.cs">
+      <DependentUpon>CompoffRequestPage.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\LeaveApplication\AdminCompoffApproval.aspx.cs">
+      <DependentUpon>AdminCompoffApproval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\LeaveApplication\AdminCompoffApproval.aspx.designer.cs">
+      <DependentUpon>AdminCompoffApproval.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\LeaveApplication\ResignationProcess.aspx.cs">
+      <DependentUpon>ResignationProcess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\LeaveApplication\ResignationProcess.aspx.designer.cs">
+      <DependentUpon>ResignationProcess.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\LeaveApplication\AddNewEmployees.aspx.cs">
+      <DependentUpon>AddNewEmployees.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\LeaveApplication\AddNewEmployees.aspx.designer.cs">
+      <DependentUpon>AddNewEmployees.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\LeaveApplication\AdminApproval.aspx.cs">
+      <DependentUpon>AdminApproval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\LeaveApplication\AdminApproval.aspx.designer.cs">
+      <DependentUpon>AdminApproval.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\LeaveApplication\AllEmployeeLeaves.aspx.cs">
+      <DependentUpon>AllEmployeeLeaves.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\LeaveApplication\AllEmployeeLeaves.aspx.designer.cs">
+      <DependentUpon>AllEmployeeLeaves.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\LeaveApplication\LeaveRequestPage.aspx.cs">
+      <DependentUpon>LeaveRequestPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\LeaveApplication\LeaveRequestPage.aspx.designer.cs">
+      <DependentUpon>LeaveRequestPage.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\LeaveApplication\MyTeamMembersReport.aspx.cs">
+      <DependentUpon>MyTeamMembersReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\LeaveApplication\MyTeamMembersReport.aspx.designer.cs">
+      <DependentUpon>MyTeamMembersReport.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\LeaveApplication\UpdateLeaveDays.aspx.cs">
+      <DependentUpon>UpdateLeaveDays.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\LeaveApplication\UpdateLeaveDays.aspx.designer.cs">
+      <DependentUpon>UpdateLeaveDays.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\LeaveApplication\CancelLeaves.aspx.cs">
+      <DependentUpon>CancelLeaves.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\LeaveApplication\CancelLeaves.aspx.designer.cs">
+      <DependentUpon>CancelLeaves.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\LeaveApplication\EditEmployee.aspx.cs">
+      <DependentUpon>EditEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\LeaveApplication\EditEmployee.aspx.designer.cs">
+      <DependentUpon>EditEmployee.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LeaveInfo\LeaveInfo.cs" />
+    <Compile Include="LeaveInfo\LeaveInfoUserControl.ascx.cs">
+      <DependentUpon>LeaveInfoUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LeaveInfo\LeaveInfoUserControl.ascx.designer.cs">
+      <DependentUpon>LeaveInfoUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LeaveRequestForm\LeaveRequestForm.cs" />
+    <Compile Include="LeaveRequestForm\LeaveRequestFormUserControl.ascx.cs">
+      <DependentUpon>LeaveRequestFormUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LeaveRequestForm\LeaveRequestFormUserControl.ascx.designer.cs">
+      <DependentUpon>LeaveRequestFormUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyTeamMemberDetails\MyTeamMemberDetails.cs" />
+    <Compile Include="MyTeamMemberDetails\MyTeamMemberDetailsUserControl.ascx.cs">
+      <DependentUpon>MyTeamMemberDetailsUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyTeamMemberDetails\MyTeamMemberDetailsUserControl.ascx.designer.cs">
+      <DependentUpon>MyTeamMemberDetailsUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PendingStatus\PendingStatus.cs" />
+    <Compile Include="PendingStatus\PendingStatusUserControl.ascx.cs">
+      <DependentUpon>PendingStatusUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PendingStatus\PendingStatusUserControl.ascx.designer.cs">
+      <DependentUpon>PendingStatusUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResignationForm\ResignationForm.cs" />
+    <Compile Include="ResignationForm\ResignationFormUserControl.ascx.cs">
+      <DependentUpon>ResignationFormUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResignationForm\ResignationFormUserControl.ascx.designer.cs">
+      <DependentUpon>ResignationFormUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateEmployeeLeaves\UpdateEmployeeLeaves.cs" />
+    <Compile Include="UpdateEmployeeLeaves\UpdateEmployeeLeavesUserControl.ascx.cs">
+      <DependentUpon>UpdateEmployeeLeavesUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateEmployeeLeaves\UpdateEmployeeLeavesUserControl.ascx.designer.cs">
+      <DependentUpon>UpdateEmployeeLeavesUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilites.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AllEmployeeLeaveList\AllEmployeeLeaveList.webpart" />
+    <None Include="AllEmployeeLeaveList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{20a5fe23-38bf-4c43-b3bf-ce1e6b23239e}</SharePointProjectItemId>
+    </None>
+    <None Include="CancelEmployeeLeaves\CancelEmployeeLeaves.webpart" />
+    <None Include="CancelEmployeeLeaves\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ea72fe77-bcf4-42d3-8da2-5ac3ebd82f35}</SharePointProjectItemId>
+    </None>
+    <None Include="CompoffRequestForm\CompoffRequestForm.webpart" />
+    <None Include="CompoffRequestForm\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{98f043ef-157e-421a-901a-812159715774}</SharePointProjectItemId>
+    </None>
+    <None Include="CompoffRequests\CompoffRequests.webpart" />
+    <None Include="CompoffRequests\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{60f04960-40e2-4393-a71a-3f23571970bd}</SharePointProjectItemId>
+    </None>
+    <None Include="CompoffStatus\CompoffStatus.webpart" />
+    <None Include="CompoffStatus\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9519db48-5d63-438b-bbd6-20e3b832337d}</SharePointProjectItemId>
+    </None>
+    <None Include="EditEmployeeInformation\EditEmployeeInformation.webpart" />
+    <None Include="EditEmployeeInformation\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{926dd76a-4c96-4b0b-9468-3ebabde5e5dc}</SharePointProjectItemId>
+    </None>
+    <None Include="EmployeeInformation\EmployeeInformation.webpart" />
+    <None Include="EmployeeInformation\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{820df79c-f8cd-483a-929a-98162b394114}</SharePointProjectItemId>
+    </None>
+    <None Include="AddNewEmployee\AddNewEmployee.webpart" />
+    <None Include="AddNewEmployee\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{db70fcf3-f40e-4446-9084-82c07acbcbd9}</SharePointProjectItemId>
+    </None>
+    <None Include="EmployeeLeavesList\EmployeeLeavesList.webpart" />
+    <None Include="EmployeeLeavesList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{447e2d85-c463-46e0-b9a1-4df05bee6e6e}</SharePointProjectItemId>
+    </None>
+    <None Include="EmployeeLeaveStatus\EmployeeLeaveStatus.webpart" />
+    <None Include="EmployeeLeaveStatus\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{47e8719a-89c6-45e4-b996-6e90eca5c68d}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Leave Application\Leave Application.feature">
+      <FeatureId>{148bf2fe-968b-45b8-bc83-eb7d37c2094c}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{61ba2343-0c83-4ae6-ac20-b3b52166d09e}</SharePointProjectItemId>
+    </None>
+    <None Include="LeaveInfo\LeaveInfo.webpart" />
+    <None Include="LeaveInfo\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{32543f38-cc61-4e50-8fca-7768feff6867}</SharePointProjectItemId>
+    </None>
+    <None Include="LeaveRequestForm\LeaveRequestForm.webpart" />
+    <None Include="LeaveRequestForm\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{90b3eaa9-265d-46ff-a162-0ca9ec411550}</SharePointProjectItemId>
+    </None>
+    <None Include="MyTeamMemberDetails\MyTeamMemberDetails.webpart" />
+    <None Include="MyTeamMemberDetails\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9f6096c7-4625-4413-8c11-ff67ee867f3a}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{f41fe217-a4c5-4cfd-affb-bcb14b7cafd2}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="PendingStatus\PendingStatus.webpart" />
+    <None Include="PendingStatus\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6cd421ea-ca60-478f-880c-f40343e80a49}</SharePointProjectItemId>
+    </None>
+    <None Include="ResignationForm\ResignationForm.webpart" />
+    <None Include="ResignationForm\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{50318b4f-5135-475e-b484-86f96966d732}</SharePointProjectItemId>
+    </None>
+    <None Include="UpdateEmployeeLeaves\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{cded15ca-e745-4834-81cd-877d23e5cf8d}</SharePointProjectItemId>
+    </None>
+    <None Include="UpdateEmployeeLeaves\UpdateEmployeeLeaves.webpart" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="AllEmployeeLeaveList\AllEmployeeLeaveListUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="AllEmployeeLeaveList\Elements.xml" />
+    <Content Include="CancelEmployeeLeaves\CancelEmployeeLeavesUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="CancelEmployeeLeaves\Elements.xml" />
+    <Content Include="CompoffRequestForm\CompoffRequestFormUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="CompoffRequestForm\Elements.xml" />
+    <Content Include="CompoffRequests\CompoffRequestsUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="CompoffRequests\Elements.xml" />
+    <Content Include="CompoffStatus\CompoffStatusUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="CompoffStatus\Elements.xml" />
+    <Content Include="EditEmployeeInformation\EditEmployeeInformationUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="EditEmployeeInformation\Elements.xml" />
+    <Content Include="EmployeeInformation\Elements.xml" />
+    <Content Include="EmployeeInformation\EmployeeInformationUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="AddNewEmployee\Elements.xml" />
+    <Content Include="AddNewEmployee\AddNewEmployeeUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="EmployeeLeavesList\Elements.xml" />
+    <Content Include="EmployeeLeavesList\EmployeeLeavesListUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="EmployeeLeaveStatus\Elements.xml" />
+    <Content Include="EmployeeLeaveStatus\EmployeeLeaveStatusUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Features\Leave Application\Leave Application.Template.xml">
+      <DependentUpon>Leave Application.feature</DependentUpon>
+    </Content>
+    <Content Include="Layouts\LeaveApplication\Unauthorised.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\LeaveApplication\CompoffRequestPage.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\LeaveApplication\AdminCompoffApproval.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\LeaveApplication\ResignationProcess.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\LeaveApplication\AddNewEmployees.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\LeaveApplication\AdminApproval.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\LeaveApplication\AllEmployeeLeaves.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\LeaveApplication\LeaveRequestPage.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\LeaveApplication\MyTeamMembersReport.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\LeaveApplication\UpdateLeaveDays.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\LeaveApplication\CancelLeaves.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\LeaveApplication\EditEmployee.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\LeaveApplication\AddNewEmployee.js" />
+    <Content Include="Layouts\LeaveApplication\CancelLeaves.js" />
+    <Content Include="Layouts\LeaveApplication\EditEmpInformation.js" />
+    <Content Include="Layouts\LeaveApplication\jquery.min.js" />
+    <Content Include="Layouts\LeaveApplication\LeaveRequest.js" />
+    <Content Include="Layouts\LeaveApplication\LeaveStatus.js" />
+    <Content Include="Layouts\LeaveApplication\SPOpenDialog.js" />
+    <Content Include="Layouts\LeaveApplication\StyleSheet.css" />
+    <Content Include="LeaveInfo\Elements.xml" />
+    <Content Include="LeaveInfo\LeaveInfoUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="LeaveRequestForm\Elements.xml" />
+    <Content Include="LeaveRequestForm\LeaveRequestFormUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="MyTeamMemberDetails\Elements.xml" />
+    <Content Include="MyTeamMemberDetails\MyTeamMemberDetailsUserControl.ascx" />
+    <Content Include="PendingStatus\Elements.xml" />
+    <Content Include="PendingStatus\PendingStatusUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="ResignationForm\Elements.xml" />
+    <Content Include="ResignationForm\ResignationFormUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="UpdateEmployeeLeaves\Elements.xml" />
+    <Content Include="UpdateEmployeeLeaves\UpdateEmployeeLeavesUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" />
+</Project>

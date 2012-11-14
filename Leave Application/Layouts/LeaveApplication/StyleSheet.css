@@ -1,0 +1,211 @@
+.Container *
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-size: 12px;
+    outline: none;
+}
+.Container TEXTAREA, INPUT, SELECT
+{
+    font: inherit 14px sans-serif;
+    font-size: 12px;
+    white-space: normal;
+    color: #545454;
+}
+.Container DFN, I, CITE, VAR, ADDRESS, EM
+{
+    font-style: normal;
+}
+.Container TH, B, STRONG, H1, H2, H3, H4, H5, H6
+{
+    font-weight: normal;
+}
+.Container A, IMG, A IMG, IFRAME, FORM, FIELDSET, ABBR, ACRONYM, OBJECT, TABLE
+{
+    border: none;
+}
+.Container TABLE
+{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.Container CAPTION, TH, TD
+{
+    text-align: left;
+    vertical-align: top;
+}
+.Container Q
+{
+    quotes: "" "";
+}
+.Container UL, OL, MENU
+{
+    list-style: none;
+}
+.Container SUB, SUP
+{
+    vertical-align: baseline;
+}
+.Container A
+{
+    color: inherit;
+}
+.Container HR
+{
+    display: none;
+}
+.Container
+{
+    color: inherit !important;
+    width: 700px; /*620px;*/
+    background: #F6F7F7;
+    padding: 5px;
+}
+.Container TABLE
+{
+    width: 100%;
+    border: 1px solid #EEE;
+    font: 12px Calibri;
+}
+.Container .header
+{
+    background: #274A44;
+    color: #CCC;
+}
+.Container .header TH
+{
+    padding: 5px;
+    border-right: 1px solid #666;
+}
+.Container TABLE TR TD
+{
+    padding: 5px;
+    border-bottom: 1px solid #DDD;
+    border-left: 1px solid #DDD;
+    font-size: 12px;
+}
+.Container .data
+{
+    background: #F0EEEE;
+    color: #555;
+    padding: 5px;
+}
+.Container .data:hover
+{
+    background: #E8E5E5;
+}
+.Container .newOption
+{
+    color: #555;
+}
+.Container SELECT, INPUT[type='text']
+{
+    border: 1px solid #eee;
+    color: #545454;
+    font-size: 12px;
+    padding: 4px;
+}
+.Container INPUT[type='text']
+{
+    width: 300px;
+}
+.Container SELECT
+{
+    width: 310px;
+}
+.Container INPUT[type='button'], INPUT[type='submit']
+{
+    border: 1px solid #C8C1C1;
+    width: 100px;
+    cursor: pointer;
+    background: #F0EEEE;
+    padding: 3px;
+    color: #555;
+    height: 29px;
+}
+.Container INPUT[type='button']:hover, INPUT[type='submit']:hover
+{
+    background: #D0CACA;
+    border: 1px solid #FFF;
+    color: #444;
+}
+.Container .Right
+{
+    text-align: right;
+}
+.Container .noborders
+{
+    border: none;
+}
+.Container .controls TD
+{
+    padding-top: 10px;
+}
+.Container .ErrorInfo
+{
+    color: #rgb(233, 163, 163);
+}
+.Container .hideGridColumn
+{
+    display: none;
+}
+.Container .ReadOnly
+{
+    background-color: #E8E5E5;
+}
+.Container .NoBorder span, span Table
+{
+    padding: 0px;
+}
+.Container .NoBorder *
+{
+    border: none;
+    padding: 0px;
+}
+.Container .NoBorder .ms-inputuserfield, input[type='text'], .ms-input
+{
+    border: 1px solid #eee !important;
+    color: #545454 !important;
+    font-size: 12px !important;
+    padding: 4px !important;
+}
+.Container .NoBorder Table
+{
+    width: 340px;
+}
+.Container .NoBorder .ms-input
+{
+    width: 300px !important;
+}
+.Container .NoBorder .ms-dtinput
+{
+    width: auto;
+}
+.ContainerWidth
+{
+    width: 700px;
+}
+
+body #s4-leftpanel
+{
+    display: none;
+}
+.s4-ca
+{
+    margin-left: 0px;
+}
+.double input[type="text"], textarea, select, label
+{
+    width: 150px;
+}
+.double .label
+{
+    width: 200px;
+}
+.wordWrap
+{
+    width: 130px;
+    word-break: break-all;
+    word-wrap: normal;
+}

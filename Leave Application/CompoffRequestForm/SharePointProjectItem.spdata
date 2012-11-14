@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="CompoffRequestFormUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="CompoffRequestForm\" Type="ElementManifest" />
+    <ProjectItemFile Source="CompoffRequestForm.webpart" Target="CompoffRequestForm\" Type="ElementFile" />
+    <ProjectItemFile Source="CompoffRequestFormUserControl.ascx" Target="CONTROLTEMPLATES\Leave_Application\CompoffRequestForm\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="Leave_Application.CompoffRequestForm" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

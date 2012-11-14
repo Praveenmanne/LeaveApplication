@@ -1,0 +1,5 @@
+C:\TFS_LM\Leave Management\Leave Application\bin\Debug\Leave Application.dll
+C:\TFS_LM\Leave Management\Leave Application\bin\Debug\Leave Application.pdb
+C:\TFS_LM\Leave Management\Leave Application\obj\Debug\ResolveAssemblyReference.cache
+C:\TFS_LM\Leave Management\Leave Application\obj\Debug\Leave Application.dll
+C:\TFS_LM\Leave Management\Leave Application\obj\Debug\Leave Application.pdb

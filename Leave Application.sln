@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Leave Application", "Leave Application\Leave Application.csproj", "{D16F706D-D24F-49B4-B7B0-134018F65BDD}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://192.168.1.152:8081/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Leave\u0020Application\\Leave\u0020Application.csproj
+		SccProjectName1 = Leave\u0020Application
+		SccLocalPath1 = Leave\u0020Application
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D16F706D-D24F-49B4-B7B0-134018F65BDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D16F706D-D24F-49B4-B7B0-134018F65BDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D16F706D-D24F-49B4-B7B0-134018F65BDD}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D16F706D-D24F-49B4-B7B0-134018F65BDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D16F706D-D24F-49B4-B7B0-134018F65BDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D16F706D-D24F-49B4-B7B0-134018F65BDD}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="AddNewEmployeeUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="AddNewEmployee\" Type="ElementManifest" />
+    <ProjectItemFile Source="AddNewEmployee.webpart" Target="AddNewEmployee\" Type="ElementFile" />
+    <ProjectItemFile Source="AddNewEmployeeUserControl.ascx" Target="CONTROLTEMPLATES\Leave_Application\AddNewEmployee\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="Leave_Application.AddNewEmployee" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>
